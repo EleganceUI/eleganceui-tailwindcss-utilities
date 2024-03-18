@@ -35,7 +35,7 @@
     "check:format": "prettier --cache --check src",
     "typecheck": "tsc",
     "check:update": "yarn upgrade-interactive --latest",
-    "npm:publish": "npm publish --access restricted",
+    "npm:publish": "npm publish",
     "prepare": "node scripts/create-husky-files.mjs && husky install"
   },
   "type": "module",
