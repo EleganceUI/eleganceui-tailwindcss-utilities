@@ -8,7 +8,7 @@ export default defineConfig({
     copyPublicDir: false,
     lib: {
       entry: 'src/index.ts',
-      name: '@eleganceui/tailwind-utilities',
+      name: 'eleganceui-tailwind-utilities',
       formats: ['es', 'umd', 'cjs'],
       fileName: (format: any) => `index.${format}.js`
     },
