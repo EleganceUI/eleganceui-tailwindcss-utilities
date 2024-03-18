@@ -1,0 +1,7 @@
+dist
+yarn.lock
+.gitignore
+.prettierignore
+.gitattributes
+vite.config.ts
+prettier.config.js

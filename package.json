@@ -1,0 +1,74 @@
+{
+  "name": "@eleganceui/tailwind-utilities",
+  "version": "1.0.0",
+  "main": "dist/index.cjs.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://eleganceui.com",
+  "bugs": {
+    "url": "https://github.com/EleganceUI/eleganceui-tailwindcss-utilities/issues"
+  },
+  "license": "MIT",
+  "author": "Éverton Toffanetto",
+  "description": "This component is a set of utility classes to simplify and expand TailwindCSS classes.",
+  "keywords": [
+    "class",
+    "css",
+    "utilitie",
+    "tailwindcss",
+    "eleganceui",
+    "kit ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EleganceUI/eleganceui-tailwindcss-utilities.git"
+  },
+  "scripts": {
+    "build": "vite build && tsc",
+    "lint": "eslint --cache src --ext ts,json --max-warnings=0",
+    "lint:fix": "eslint --cache --fix src --ext ts,json",
+    "format": "prettier --cache --write src",
+    "check:format": "prettier --cache --check src",
+    "typecheck": "tsc",
+    "check:update": "yarn upgrade-interactive --latest",
+    "npm:publish": "npm publish --access restricted",
+    "prepare": "node scripts/create-husky-files.mjs && husky install"
+  },
+  "type": "module",
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.1.0",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@types/node": "20.11.26",
+    "@typescript-eslint/eslint-plugin": "7.2.0",
+    "@typescript-eslint/parser": "7.2.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-config-standard-with-typescript": "^40.0.0",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "16.3.1",
+    "eslint-plugin-prettier": "5.0.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "husky": "9.0.11",
+    "lint-staged": "15.1.0",
+    "tailwindcss": "^3.4.1",
+    "prettier": "^3.2.4",
+    "typescript": "5.4.2",
+    "vite": "^5.1.6",
+    "vite-tsconfig-paths": "^4.3.1"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
