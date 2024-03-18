@@ -10,7 +10,7 @@ This component is a set of utility classes to simplify and expand TailwindCSS cl
 
 ## Installation
 
-`yarn add -D @eleganceui/tailwind-utilities` or `npm i -D @eleganceui/tailwind-utilities`
+`yarn add -D eleganceui-tailwind-utilities` or `npm i -D eleganceui-tailwind-utilities`
 
 ## Configuration
 
