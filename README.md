@@ -255,7 +255,7 @@ Classes with new features:
 
 - animate-skeleton:
   - `<div class="animate-skeleton" />`
-  - Cria animação de skeleton com `animate-pulse bg-slate-200`.
+  - Create skeleton animation with `animate-pulse bg-slate-200`.
 
 <br />
 
