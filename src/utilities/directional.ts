@@ -1,6 +1,6 @@
 import plugin from 'tailwindcss/plugin'
 
-export const directional = plugin(({ matchUtilities, theme }) => {
+export const directional = plugin(({ matchUtilities, addUtilities, theme }) => {
   const generateDirection =
     (direction: string) => (value: string | number) => ({
       [direction]: `${value}`
@@ -17,6 +17,11 @@ export const directional = plugin(({ matchUtilities, theme }) => {
         type: 'any'
       }
     )
+    addUtilities({
+      [`.${direction[0]}-auto`]: {
+        [direction]: 'auto'
+      }
+    })
   })
   matchUtilities(
     {
