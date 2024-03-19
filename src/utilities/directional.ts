@@ -13,6 +13,7 @@ export const directional = plugin(({ matchUtilities, theme }) => {
       },
       {
         values: theme('spacing'),
+        supportsNegativeValues: true,
         type: 'any'
       }
     )
