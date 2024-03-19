@@ -1,4 +1,4 @@
-# @eleganceui/tailwindcss-utilities
+# eleganceui-tailwindcss-utilities
 
 This component is a set of utility classes to simplify and expand TailwindCSS classes.
 
