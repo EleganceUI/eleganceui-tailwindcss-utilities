@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       entry: 'src/index.ts',
       name: 'eleganceui-tailwind-utilities',
-      formats: ['es', 'umd', 'cjs'],
+      formats: ['es', 'umd'],
       fileName: (format: any) => `index.${format}.js`
     },
     rollupOptions: {
