@@ -12,9 +12,10 @@
     "url": "https://github.com/EleganceUI/eleganceui-tailwindcss-utilities/issues"
   },
   "license": "MIT",
-  "author": "Éverton Toffanetto",
+  "author": "Éverton Toffanetto <contato@querocriarsite.com> (https://github.com/everton-dgn)",
   "contributors": [
-    "Wygor Fonseca <contato@wygor.dev.br> (https://github.com/WygorFonseca)"
+    "Wygor Fonseca <contato@wygor.dev.br> (https://github.com/WygorFonseca)",
+    "Éverton Toffanetto <contato@querocriarsite.com> (https://github.com/everton-dgn)"
   ],
   "description": "This component is a set of utility classes to simplify and expand TailwindCSS classes.",
   "keywords": [
