@@ -13,6 +13,9 @@
   },
   "license": "MIT",
   "author": "Éverton Toffanetto",
+  "contributors": [
+    "Wygor Fonseca <contato@wygor.dev.br> (https://github.com/WygorFonseca)"
+  ],
   "description": "This component is a set of utility classes to simplify and expand TailwindCSS classes.",
   "keywords": [
     "class",
