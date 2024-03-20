@@ -237,6 +237,10 @@ Classes with new features:
   - `<div class="square-6" />`
   - `.square-6 { width: 1.5rem; height: 1.5rem; min-width: 1.5rem; min-height: 1.5rem; }`
 
+- ellipsis:
+  - `<div class="ellipsis" />`
+  - Adds ellipsis to text that exceeds the container, taking up all available space, in addition to working in cases where `truncate` does not work.
+
 - scrollbar-hide:
   - `<div class="scrollbar-hide" />`
   - Hides scroll bar.
