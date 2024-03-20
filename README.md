@@ -265,6 +265,9 @@ Classes with new features:
 
 ---
 
+# Contributors
+<a href="https://github.com/EleganceUI/eleganceui-tailwindcss-utilities/graphs/contributors"><img src="https://contrib.rocks/image?repo=EleganceUI/eleganceui-tailwindcss-utilities" /></a>
+
 # Author
 
 By Éverton Toffanetto.
