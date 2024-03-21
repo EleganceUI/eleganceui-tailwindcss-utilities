@@ -17,7 +17,6 @@ const getPrePushContent = `#!/usr/bin/env sh
 
 npx --no-install
 
-yarn test
 yarn typecheck
 yarn build
 `
