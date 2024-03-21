@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://www.npmjs.com/package/eleganceui-tailwind-utilities",
+  "homepage": "https://github.com/EleganceUI/eleganceui-tailwindcss-utilities",
   "bugs": {
     "url": "https://github.com/EleganceUI/eleganceui-tailwindcss-utilities/issues"
   },
