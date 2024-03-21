@@ -14,8 +14,16 @@
   "license": "MIT",
   "author": "Éverton Toffanetto <contato@querocriarsite.com> (https://github.com/everton-dgn)",
   "contributors": [
-    "Wygor Fonseca <contato@wygor.dev.br> (https://github.com/WygorFonseca)",
-    "Éverton Toffanetto <contato@querocriarsite.com> (https://github.com/everton-dgn)"
+    {
+      "name": "Wygor Fonseca",
+      "email": "contato@wygor.dev.br",
+      "url": "https://github.com/WygorFonseca"
+    },
+    {
+      "name": "Éverton Toffanetto",
+      "email": "contato@querocriarsite.com",
+      "url": "https://github.com/everton-dgn"
+    }
   ],
   "description": "This component is a set of utility classes to simplify and expand TailwindCSS classes.",
   "keywords": [
