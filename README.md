@@ -62,6 +62,38 @@ export default config
 
 # How to use
 
+```diff
+- {/* before */}
+- <div className="container mx-auto px-4">
+-   <div className="flex w-full flex-row flex-wrap gap-4">
+-     <div className="flex size-72 min-h-72 min-w-72 flex-col gap-4 overflow-hidden rounded-xl shadow">
+-       <div className="flex h-32 w-full animate-pulse bg-slate-200" />
+-       <div className="gap-4 rounded-lg p-4">
+-         <h3 className="truncate text-lg font-bold">
+-           Example long title omitted with ellipsis
+-         </h3>
+-         <p className="text-sm">Brief description.</p>
+-       </div>
+-     </div>
+-     {/* ... */}
+-   </div>
+- </div>
+
++ {/* after */}
++ <div className="px-4 container-row g-4">
++   <div className="overflow-hidden rounded-xl shadow col g-4 square-72">
++     <div className="h-32 col-full animate-skeleton" />
++     <div className="rounded-lg p-4 g-4">
++       <h3 className="ellipsis fs-lg fw-bold">
++         Example long title omitted with ellipsis
++       </h3>
++       <p className="fs-sm">Brief description.</p>
++     </div>
++   </div>
++   {/* ... */}
++ </div>
+```
+
 There are two types of utility classes, those that simplify the syntax of classes that already exist in TailwindCSS and those that add new functionality:
 
 Simplified classes:
