@@ -1,4 +1,4 @@
-# eleganceui-tailwindcss-utilities
+# eleganceui-tailwind-utilities
 
 This component is a set of utility classes to simplify and expand TailwindCSS classes.
 
@@ -10,7 +10,15 @@ This component is a set of utility classes to simplify and expand TailwindCSS cl
 
 ## Installation
 
-`yarn add -D eleganceui-tailwind-utilities` or `npm i -D eleganceui-tailwind-utilities`
+```shell
+yarn add -D eleganceui-tailwind-utilities
+```
+
+or 
+
+```shell
+npm i -D eleganceui-tailwind-utilities
+```
 
 ## Configuration
 
@@ -19,7 +27,7 @@ It is possible to import the complete set with all utility classes at once:
 ```typescript
 import type { Config } from 'tailwindcss'
 
-import * as customUtilities from '@eleganceui/tailwindcss-utilities'
+import * as customUtilities from '@eleganceui/tailwind-utilities'
 
 const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx}', './index.html'],
@@ -37,7 +45,7 @@ or if you prefer, only the desired utilities can be imported individually:
 ```typescript
 import type { Config } from 'tailwindcss'
 
-import { skeleton, separator } from '@eleganceui/tailwindcss-utilities'
+import { skeleton, separator } from '@eleganceui/tailwind-utilities'
 
 const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx}', './index.html'],
