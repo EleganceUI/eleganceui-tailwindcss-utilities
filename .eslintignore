@@ -5,3 +5,4 @@ yarn.lock
 .gitattributes
 vite.config.ts
 prettier.config.js
+scripts
