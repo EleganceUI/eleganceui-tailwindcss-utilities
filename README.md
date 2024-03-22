@@ -217,6 +217,10 @@ Classes with new features:
   - `<div class="col" />`
   - `.col { display: flex; flex-direction: column; }`
 
+- col-reverse:
+  - `<div class="col-reverse" />`
+  - `.col { display: flex; flex-direction: column-reverse; }`
+
 - col-full:
   - `<div class="col-full" />`
   - `.col { display: flex; flex-direction: column; width: 100%; }`
@@ -224,6 +228,10 @@ Classes with new features:
 - row:
   - `<div class="row" />`
   - `.row { display: flex; flex-direction: row; }`
+
+- row-reverse:
+  - `<div class="row-reverse" />`
+  - `.row { display: flex; flex-direction: row-reverse; }`
 
 - row-full:
   - `<div class="row-full" />`
