@@ -186,6 +186,14 @@ Simplified classes:
   - Before: `<div class="object-fit" />`
   - After: `<div class="obj-fit" />`
 
+- flex-{wrap-reverse, wrap, nowrap} => f-{wrap-reverse, wrap, nowrap}.
+  - Before: `<div class="flex-wrap" />`
+  - After: `<div class="f-wrap" />`
+
+- flex-{1, auto, initial, none} => f-{1, auto, initial, none}.
+  - Before: `<div class="flex-1" />`
+  - After: `<div class="f-1" />`
+
 <br>
 
 Classes with new features:
