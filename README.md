@@ -72,6 +72,7 @@ export default config
 -         <h3 className="truncate text-lg font-bold">
 -           Example long title omitted with ellipsis
 -         </h3>
+-         <hr className="border-0 rounded bg-slate-200 h-px w-full" />
 -         <p className="text-sm">Brief description.</p>
 -       </div>
 -     </div>
@@ -81,12 +82,13 @@ export default config
 
 + {/* after */}
 + <div className="px-4 container-row g-4">
-+   <div className="overflow-hidden rounded-xl shadow col g-4 square-72">
++   <div className="ov-hidden br-xl shadow col g-4 square-72">
 +     <div className="h-32 col-full animate-skeleton" />
-+     <div className="rounded-lg p-4 g-4">
++     <div className="br-lg p-4 g-4">
 +       <h3 className="ellipsis fs-lg fw-bold">
 +         Example long title omitted with ellipsis
 +       </h3>
++       <hr className="separator-x" />
 +       <p className="fs-sm">Brief description.</p>
 +     </div>
 +   </div>
@@ -165,6 +167,11 @@ Simplified classes:
 - overflow-y-{suffix} => ovy-{suffix}.
   - Before: `<div class="overflow-y-scroll" />`
   - After: `<div class="ovy-scroll" />`
+
+- rounded-{suffix} => br-{suffix}.
+  - Before: `<div class="rounded-bl-xl" />`
+  - After: `<div class="br-bl-xl" />`
+  - Valid for all values and variants of `rounded`.
 
 - leading-{suffix} => lh-{suffix}.
   - Before: `<div class="leading-3" />`
