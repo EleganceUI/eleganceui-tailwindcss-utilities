@@ -154,6 +154,18 @@ Simplified classes:
   - Before: `<div class="gap-x-0" />`
   - After: `<div class="gx-0" />`
 
+- overflow-{suffix} => ov-{suffix}.
+  - Before: `<div class="overflow-hidden" />`
+  - After: `<div class="ov-hidden" />`
+
+- overflow-x-{suffix} => ovx-{suffix}.
+  - Before: `<div class="overflow-x-clip" />`
+  - After: `<div class="ovx-clip" />`
+
+- overflow-y-{suffix} => ovy-{suffix}.
+  - Before: `<div class="overflow-y-scroll" />`
+  - After: `<div class="ovy-scroll" />`
+
 - leading-{suffix} => lh-{suffix}.
   - Before: `<div class="leading-3" />`
   - After: `<div class="lh-3" />`
