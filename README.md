@@ -173,6 +173,11 @@ Simplified classes:
   - After: `<div class="br-bl-xl" />`
   - Valid for all values and variants of `rounded`.
 
+- columns-{suffix} => cols-{suffix}.
+  - Before: `<div class="columns-xl" />`
+  - After: `<div class="cols-xl" />`
+  - Valid for all values and variants of `columns`.
+
 - leading-{suffix} => lh-{suffix}.
   - Before: `<div class="leading-3" />`
   - After: `<div class="lh-3" />`
