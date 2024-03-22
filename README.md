@@ -181,7 +181,12 @@ Simplified classes:
 - border-{suffix} => bw-{suffix}.
   - Before: `<div class="border-y-0" />`
   - After: `<div class="bw-y-0" />`
-  - Valid for all values and variants of `border`.
+  - Valid for all values and variants of `border-width`.
+
+- border-{suffix} => bc-{suffix}.
+  - Before: `<div class="border-white" />`
+  - After: `<div class="bc-white" />`
+  - Valid for all values and variants of `border-color`.
 
 - leading-{suffix} => lh-{suffix}.
   - Before: `<div class="leading-3" />`
