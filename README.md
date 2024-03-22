@@ -178,6 +178,11 @@ Simplified classes:
   - After: `<div class="cols-xl" />`
   - Valid for all values and variants of `columns`.
 
+- border-{suffix} => bw-{suffix}.
+  - Before: `<div class="border-y-0" />`
+  - After: `<div class="bw-y-0" />`
+  - Valid for all values and variants of `border`.
+
 - leading-{suffix} => lh-{suffix}.
   - Before: `<div class="leading-3" />`
   - After: `<div class="lh-3" />`
