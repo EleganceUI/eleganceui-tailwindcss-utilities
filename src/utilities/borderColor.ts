@@ -8,7 +8,7 @@ export const borderColor = plugin(({ matchUtilities, theme }) => {
       })
     },
     {
-      values: theme('borderColor'),
+      values: theme('colors'),
       type: 'any'
     }
   )
