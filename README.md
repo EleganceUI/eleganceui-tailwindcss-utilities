@@ -182,6 +182,10 @@ Simplified classes:
   - Before: `<div class="leading-3" />`
   - After: `<div class="lh-3" />`
 
+- object-{suffix} => obj-{suffix}.
+  - Before: `<div class="object-fit" />`
+  - After: `<div class="obj-fit" />`
+
 <br>
 
 Classes with new features:
