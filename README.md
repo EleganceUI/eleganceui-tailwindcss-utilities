@@ -66,7 +66,7 @@ export default config
 - {/* before */}
 - <div className="container mx-auto px-4">
 -   <div className="flex w-full flex-row flex-wrap gap-4">
--     <div className="flex size-72 min-h-72 min-w-72 flex-col gap-4 overflow-hidden rounded-xl shadow">
+-     <div className="flex size-72 min-h-72 min-w-72 flex-col gap-4 overflow-hidden rounded-xl shadow border border-blue-500">
 -       <div className="flex h-32 w-full animate-pulse bg-slate-200" />
 -       <div className="gap-4 rounded-lg p-4">
 -         <h3 className="truncate text-lg font-bold">
@@ -79,10 +79,9 @@ export default config
 -     {/* ... */}
 -   </div>
 - </div>
-
 + {/* after */}
 + <div className="px-4 container-row g-4">
-+   <div className="ov-hidden br-xl shadow col g-4 square-72">
++   <div className="ov-hidden br-xl shadow col g-4 square-72 bw bc-blue-500">
 +     <div className="h-32 col-full animate-skeleton" />
 +     <div className="br-lg p-4 g-4">
 +       <h3 className="ellipsis fs-lg fw-bold">
@@ -187,6 +186,21 @@ Simplified classes:
   - Before: `<div class="border-white" />`
   - After: `<div class="bc-white" />`
   - Valid for all values and variants of `border-color`.
+
+- outline-{suffix} => otl-{suffix}.
+  - Before: `<div class="outline-1" />`
+  - After: `<div class="otl-1" />`
+  - Valid for all values and variants of `outline-width`.
+
+- outline-{suffix} => bc-{suffix}.
+  - Before: `<div class="outline-white" />`
+  - After: `<div class="otl-white" />`
+  - Valid for all values and variants of `outline-color`.
+
+- outline-offset-{suffix} => otl-o-{suffix}.
+  - Before: `<div class="outline-offset-1" />`
+  - After: `<div class="otl-o-1" />`
+  - Valid for all values and variants of `outline-offset`.
 
 - leading-{suffix} => lh-{suffix}.
   - Before: `<div class="leading-3" />`
