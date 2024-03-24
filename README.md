@@ -66,7 +66,7 @@ export default config
 - {/* before */}
 - <div className="container mx-auto px-4">
 -   <div className="flex w-full flex-row flex-wrap gap-4">
--     <div className="flex size-72 min-h-72 min-w-72 flex-col gap-4 overflow-hidden rounded-xl shadow border border-blue-500">
+-     <div className="flex size-72 min-h-72 min-w-72 flex-col gap-4 overflow-hidden rounded-xl shadow border-2 border-blue-500">
 -       <div className="flex h-32 w-full animate-pulse bg-slate-200" />
 -       <div className="gap-4 rounded-lg p-4">
 -         <h3 className="truncate text-lg font-bold text-blue-500">
@@ -81,7 +81,7 @@ export default config
 - </div>
 + {/* after */}
 + <div className="px-4 container-row g-4">
-+   <div className="ov-hidden br-xl shadow col g-4 square-72 bw bc-blue-500">
++   <div className="ov-hidden br-xl shadow col g-4 square-72 bw-2-blue-500">
 +     <div className="h-32 col-full animate-skeleton" />
 +     <div className="br-lg p-4 g-4">
 +       <h3 className="ellipsis fs-lg-bold-blue-500">
@@ -168,50 +168,51 @@ Simplified classes:
   - After: `<div class="ovy-scroll" />`
 
 - rounded-{suffix} => br-{suffix}.
+  - Valid for all values and variants of `rounded`.
   - Before: `<div class="rounded-bl-xl" />`
   - After: `<div class="br-bl-xl" />`
-  - Valid for all values and variants of `rounded`.
 
 - columns-{suffix} => cols-{suffix}.
+  - Valid for all values and variants of `columns`.
   - Before: `<div class="columns-xl" />`
   - After: `<div class="cols-xl" />`
-  - Valid for all values and variants of `columns`.
 
 - border-{suffix} => bw-{suffix}.
+  - Valid for all values and variants of `border-width`.
   - Before: `<div class="border-y-0" />`
   - After: `<div class="bw-y-0" />`
-  - Valid for all values and variants of `border-width`.
 
 - border-{suffix} => bc-{suffix}.
+  - Valid for all values and variants of `border-color`.
   - Before: `<div class="border-white" />`
   - After: `<div class="bc-white" />`
-  - Valid for all values and variants of `border-color`.
 
 - outline-{suffix} => otl-{suffix}.
+  - Valid for all values and variants of `outline-width`.
   - Before: `<div class="outline-1" />`
   - After: `<div class="otl-1" />`
-  - Valid for all values and variants of `outline-width`.
 
-- outline-{suffix} => bc-{suffix}.
+- outline-{suffix} => otl-{suffix}.
+  - Valid for all values and variants of `outline-color`.
   - Before: `<div class="outline-white" />`
   - After: `<div class="otl-white" />`
-  - Valid for all values and variants of `outline-color`.
 
 - outline-offset-{suffix} => otl-o-{suffix}.
+  - Valid for all values and variants of `outline-offset`.
   - Before: `<div class="outline-offset-1" />`
   - After: `<div class="otl-o-1" />`
-  - Valid for all values and variants of `outline-offset`.
 
 - leading-{suffix} => lh-{suffix}.
   - Before: `<div class="leading-3" />`
   - After: `<div class="lh-3" />`
 
 - object-{suffix} => obj-{suffix}.
+  - Valid for all values and variants of `object`.
   - Before: `<div class="object-fit" />`
   - After: `<div class="obj-fit" />`
+
   - Before: `<div class="object-left-bottom" />`
   - After: `<div class="obj-lb" />`
-  - Valid for all values and variants of `object`.
 
 - bg-{position} => bg-{abbreviation}.
   - Before: `<div class="bg-right-top" />`
@@ -232,72 +233,80 @@ Simplified classes:
 Classes with new features:
 
 - fs-{fontSize}-{fontWeight}:
-  - `<div class="fs-lg-bold" />`
-  - `.fs-lg-bold { font-size: 1.125rem; font-weight: bold; }`
+  - Before: `<div class="text-lg font-bold" />`
+  - After: `<div class="fs-lg-bold" />`
 
 - fs-{fontSize}-{color}:
-  - `<div class="fs-lg-blue-500" />`
-  - `.fs-lg-blue-500 { font-size: 1.125rem; color: #3b82f6; }`
+  - Before: `<div class="text-lg text-blue-500" />`
+  - After: `<div class="fs-lg-blue-500" />`
 
 
 - fs-{fontSize}-{fontWeight}-{color}:
-  - `<div class="fs-lg-bold-blue-500" />`
-  - `.fs-lg-bold-blue-500 { font-size: 1.125rem; font-weight: bold; color: #3b82f6; }`
+  - Before: `<div class="text-lg font-bold text-blue-500" />`
+  - After: `<div class="fs-lg-bold-blue-500" />`
 
 - bw-{borderWidth}-{borderColor}:
-  - `<div class="bw-4-blue-500" />`
-  - `.bw-4-blue-500 { border-width: 4px; color: #3b82f6; }`
+  - Before: `<div class="border-4 border-blue-500" />`
+  - After: `<div class="bw-4-blue-500" />`
 
 - bw-{borderWidth}-{borderStyle}-{borderColor}:
-  - `<div class="bw-4-dashed-blue-500" />`
-  - `.bw-4-dashed-blue-500 { border-width: 4px; border-style: dashed; color: #3b82f6; }`
+  - Before: `<div class="border-4 border-dashed border-blue-500" />`
+  - After: `<div class="bw-4-dashed-blue-500" />`
+
+- otl-{outlineWidth}-{outlineColor}.
+  - Before: `<div class="outline-2 outline outline-amber-600" />`
+  - After: `<div class="otl-2-amber-600" />`
+
+- otl-{outlineWidth}-{outlineStyle}-{outlineColor}.
+  - Before: `<div class="outline-2 outline-dashed outline-amber-600" />`
+  - After: `<div class="otl-2-dashed-amber-600" />`
 
 - {r, l, t, b, x, y}-{suffix}:
-  - `<div class="r-1" />`
-  - `.r-1 { right: 0.25rem; /* 4px */ }`
-  
-  - `<div class="l-1.5" />`
-  - `.l-1.5 { left: 0.375rem; /* 6px */ }`
-  
-  - `<div class="t-1" />`
-  - `.t-1 { top: 0.25rem; /* 4px */ }`
-  
-  - `<div class="b-2" />`
-  - `.b-2 { bottom: 0.5rem; /* 8px */ }`
-  
-  - `<div class="x-1" />`
-  - `.x-1 { left: 0.25rem; right: 0.25rem; }`
-  
-  - `<div class="y-1" />`
-  - `.y-1 { bottom: 0.25rem; top: 0.25rem; }`
+  - Before: `<div class="right-1" />`
+  - After: `<div class="r-1" />`
+
+  - Before: `<div class="left-1.5" />`
+  - After: `<div class="l-1.5" />`
+
+  - Before: `<div class="top-1" />`
+  - After: `<div class="t-1" />`
+
+  - Before: `<div class="bottom-2" />`
+  - After: `<div class="b-2" />`
+
+  - Before: `<div class="inset-x-1" />`
+  - After: `<div class="x-1" />`
+
+  - Before: `<div class="inset-y-1" />`
+  - After: `<div class="y-1" />`
 
 - center:
-  - `<div class="center" />`
-  - `.center { justify-content: center; align-items: center; }`
+  - Before: `<div class="items-center justify-center" />`
+  - After: `<div class="center" />`
 
 - col:
-  - `<div class="col" />`
-  - `.col { display: flex; flex-direction: column; }`
+  - Before: `<div class="flex flex-col" />`
+  - After: `<div class="col" />`
 
 - col-reverse:
-  - `<div class="col-reverse" />`
-  - `.col { display: flex; flex-direction: column-reverse; }`
+  - Before: `<div class="flex flex-col-reverse" />`
+  - After: `<div class="col-reverse" />`
 
 - col-full:
-  - `<div class="col-full" />`
-  - `.col { display: flex; flex-direction: column; width: 100%; }`
+  - Before: `<div class="flex flex-col w-full" />`
+  - After: `<div class="col-full" />`
 
 - row:
-  - `<div class="row" />`
-  - `.row { display: flex; flex-direction: row; }`
+  - Before: `<div class="flex flex-row" />`
+  - After: `<div class="row" />`
 
 - row-reverse:
-  - `<div class="row-reverse" />`
-  - `.row { display: flex; flex-direction: row-reverse; }`
+  - Before: `<div class="flex flex-row-reverse" />`
+  - After: `<div class="row-reverse" />`
 
 - row-full:
-  - `<div class="row-full" />`
-  - `.row { display: flex; flex-direction: row; width: 100%; }`
+  - Before: `<div class="flex flex-row w-full" />`
+  - After: `<div class="row-full" />`
 
 - container-col:
   - `<div class="container-col" />`
@@ -356,28 +365,28 @@ Classes with new features:
     ```
 
 - after-base:
-  - `<div class="after-base" />`
-  - `.after-base::after { content: ""; display: block; }`
+  - Before: `<div class="after:block after:content-['']" />`
+  - After: `<div class="after-base" />`
   
 - before-base:
-  - `<div class="before-base" />`
-  - `.before-base::before { content: ""; display: block; }`
+  - Before: `<div class="before:block before:content-['']" />`
+  - After: `<div class="before-base" />`
   
 - max-size-{suffix}:
-  - `<div class="max-size-6" />`
-  - `.max-size-6 { max-width: 1.5rem; max-height: 1.5rem; }`
+  - Before: `<div class="max-w-6 max-h-6" />`
+  - After: `<div class="max-size-6" />`
   
 - min-size-{suffix}:
-  - `<div class="min-size-6" />`
-  - `.min-size-6 { min-width: 1.5rem; min-height: 1.5rem; }`
+  - Before: `<div class="min-w-6 min-h-6" />`
+  - After: `<div class="min-size-6" />`
   
 - square-{suffix}:
-  - `<div class="square-6" />`
-  - `.square-6 { width: 1.5rem; height: 1.5rem; min-width: 1.5rem; min-height: 1.5rem; }`
+  - Before: `<div class="min-w-6 min-h-6 w-6 h-6" />`
+  - After: `<div class="square-6" />`
 
 - ellipsis:
-  - `<div class="ellipsis" />`
   - Adds ellipsis to text that exceeds the container, taking up all available space, in addition to working in cases where `truncate` does not work.
+  - `<div class="ellipsis" />`
 
 - scrollbar-hide:
   - `<div class="scrollbar-hide" />`
@@ -388,18 +397,20 @@ Classes with new features:
   - Show scroll bar.
 
 - hr-x:
-  - `<hr class="hr-x" />`
-  - `<hr class="hr-x-blue-500" />`
-  - Creates a 1px tall horizontal separator with a width of 100%.
+  - Before: `<hr class="border-0 rounded-[100px] bg-gray-200 h-px w-full" />`
+  - After: `<hr class="hr-x" />`
+  - Before: `<hr class="border-0 rounded-[100px] bg-blue-500 h-px w-full" />`
+  - After: `<hr class="hr-x-blue-500" />`
 
 - hr-y:
-  - `<hr class="hr-y" />`
-  - `<hr class="hr-y-blue-700" />`
-  - Creates a 1px wide vertical separator with a height of 100%.
+  - Before: `<hr class="border-0 rounded-[100px] bg-gray-200 w-px h-full" />`
+  - After: `<hr class="hr-y" />`
+  - Before: `<hr class="border-0 rounded-[100px] bg-blue-500 w-px h-full" />`
+  - After: `<hr class="hr-y-blue-500" />`
 
 - animate-skeleton:
-  - `<div class="animate-skeleton" />`
-  - Create skeleton animation with `animate-pulse bg-slate-200`.
+  - Before: `<div class="animate-pulse bg-slate-200" />`
+  - After: `<div class="animate-skeleton" />`.
 
 <br />
 
