@@ -69,11 +69,11 @@ export default config
 -     <div className="flex size-72 min-h-72 min-w-72 flex-col gap-4 overflow-hidden rounded-xl shadow border border-blue-500">
 -       <div className="flex h-32 w-full animate-pulse bg-slate-200" />
 -       <div className="gap-4 rounded-lg p-4">
--         <h3 className="truncate text-lg font-bold">
+-         <h3 className="truncate text-lg font-bold text-blue-500">
 -           Example long title omitted with ellipsis
 -         </h3>
 -         <hr className="border-0 rounded bg-slate-200 h-px w-full" />
--         <p className="text-sm">Brief description.</p>
+-         <p className="text-sm font-normal text-gray-800">Brief description.</p>
 -       </div>
 -     </div>
 -     {/* ... */}
@@ -84,11 +84,11 @@ export default config
 +   <div className="ov-hidden br-xl shadow col g-4 square-72 bw bc-blue-500">
 +     <div className="h-32 col-full animate-skeleton" />
 +     <div className="br-lg p-4 g-4">
-+       <h3 className="ellipsis fs-lg fw-bold">
++       <h3 className="ellipsis fs-lg-bold-blue-500">
 +         Example long title omitted with ellipsis
 +       </h3>
-+       <hr className="separator-x" />
-+       <p className="fs-sm">Brief description.</p>
++       <hr className="hr-x" />
++       <p className="fs-sm-normal-gray-800">Brief description.</p>
 +     </div>
 +   </div>
 +   {/* ... */}
