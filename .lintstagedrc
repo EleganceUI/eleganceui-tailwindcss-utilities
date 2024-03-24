@@ -1,6 +1,0 @@
-{
-  "src/**/*.{ts,tsx}": [
-    "yarn lint:fix",
-    "yarn format"
-  ]
-}

@@ -47,16 +47,9 @@
     "check:format": "prettier --cache --check src",
     "typecheck": "tsc",
     "check:update": "yarn upgrade-interactive --latest",
-    "npm:publish": "npm publish",
-    "prepare": "node scripts/create-husky-files.js && husky"
+    "npm:publish": "npm publish"
   },
   "type": "module",
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true",
-      "pre-commit": "lint-staged"
-    }
-  },
   "devDependencies": {
     "@commitlint/cli": "^19.1.0",
     "@commitlint/config-conventional": "^19.1.0",
@@ -76,8 +69,6 @@
     "eslint-plugin-prettier": "5.0.1",
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-sonarjs": "^0.23.0",
-    "husky": "9.0.11",
-    "lint-staged": "15.1.0",
     "prettier": "^3.2.4",
     "semantic-release": "^23.0.5",
     "tailwindcss": "^3.4.1",
