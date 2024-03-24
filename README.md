@@ -209,6 +209,13 @@ Simplified classes:
 - object-{suffix} => obj-{suffix}.
   - Before: `<div class="object-fit" />`
   - After: `<div class="obj-fit" />`
+  - Before: `<div class="object-left-bottom" />`
+  - After: `<div class="obj-lb" />`
+  - Valid for all values and variants of `object`.
+
+- bg-{position} => bg-{abbreviation}.
+  - Before: `<div class="bg-right-top" />`
+  - After: `<div class="bg-rt" />`
 
 - flex-{wrap-reverse, wrap, nowrap} => f-{wrap-reverse, wrap, nowrap}.
   - Before: `<div class="flex-wrap" />`
@@ -220,7 +227,30 @@ Simplified classes:
 
 <br>
 
+---
+
 Classes with new features:
+
+- fs-{fontSize}-{fontWeight}:
+  - `<div class="fs-lg-bold" />`
+  - `.fs-lg-bold { font-size: 1.125rem; font-weight: bold; }`
+
+- fs-{fontSize}-{color}:
+  - `<div class="fs-lg-blue-500" />`
+  - `.fs-lg-blue-500 { font-size: 1.125rem; color: #3b82f6; }`
+
+
+- fs-{fontSize}-{fontWeight}-{color}:
+  - `<div class="fs-lg-bold-blue-500" />`
+  - `.fs-lg-bold-blue-500 { font-size: 1.125rem; font-weight: bold; color: #3b82f6; }`
+
+- bw-{borderWidth}-{borderColor}:
+  - `<div class="bw-4-blue-500" />`
+  - `.bw-4-blue-500 { border-width: 4px; color: #3b82f6; }`
+
+- bw-{borderWidth}-{borderStyle}-{borderColor}:
+  - `<div class="bw-4-dashed-blue-500" />`
+  - `.bw-4-dashed-blue-500 { border-width: 4px; border-style: dashed; color: #3b82f6; }`
 
 - {r, l, t, b, x, y}-{suffix}:
   - `<div class="r-1" />`
@@ -357,12 +387,14 @@ Classes with new features:
   - `<div class="scrollbar-default" />`
   - Show scroll bar.
 
-- separator-x:
-  - `<hr class="separator-x" />`
+- hr-x:
+  - `<hr class="hr-x" />`
+  - `<hr class="hr-x-blue-500" />`
   - Creates a 1px tall horizontal separator with a width of 100%.
 
-- separator-y:
-  - `<hr class="separator-y" />`
+- hr-y:
+  - `<hr class="hr-y" />`
+  - `<hr class="hr-y-blue-700" />`
   - Creates a 1px wide vertical separator with a height of 100%.
 
 - animate-skeleton:
