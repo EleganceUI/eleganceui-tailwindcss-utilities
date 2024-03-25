@@ -1,6 +1,14 @@
-# eleganceui-tailwind-utilities
+# EleganceUI - Tailwind Utilities
 
-This component is a set of utility classes to simplify and expand TailwindCSS classes.
+Expand the possibilities of TailwindCSS with `eleganceui-tailwind-utilities`, a library of utility classes designed to simplify and expand your styling options. With our solution, you save time by writing less code and maintaining visual consistency across your projects.
+
+## Features
+
+- **Class Simplification**: Transform long TailwindCSS class chains into shorter, more readable versions.
+- **Additional Features**: Unlock new possibilities with exclusive utility classes, further optimizing your workflow.
+- **Easy Integration**: Compatible with existing TailwindCSS configuration, allowing for a smooth and seamless transition.
+- **Customization and Flexibility**: Choose to import the full set of utilities or just what you need for your project.
+- **Adapts with Custom Theme**: Recognizes the theme's custom tokens, continue using the abbreviated prefixes + custom values from your tailwind.config file.
 
 <br />
 
@@ -9,6 +17,8 @@ This component is a set of utility classes to simplify and expand TailwindCSS cl
 # How to install and to set up
 
 ## Installation
+
+Install the library with Yarn or NPM:
 
 ```shell
 yarn add -D eleganceui-tailwind-utilities
@@ -58,9 +68,13 @@ const config: Config = {
 export default config
 ```
 
+<br />
+
 ---
 
 # How to use
+
+Transform your code with EleganceUI Tailwind Utilities utility classes. Here's an example of how to simplify your code:
 
 ```diff
 - {/* before */}
@@ -97,130 +111,194 @@ export default config
 
 There are two types of utility classes, those that simplify the syntax of classes that already exist in TailwindCSS and those that add new functionality:
 
-Simplified classes:
+## Simplified Classes
 
 - content-{suffix} => ac-{suffix}.
   - Before: `<div class="content-center" />`
   - After: `<div class="ac-center" />`
 
+<br />
+
 - items-{suffix} => ai-{suffix}.
   - Before: `<div class="items-start" />`
   - After: `<div class="ai-start" />`
+
+<br />
 
 - self-{suffix} => as-{suffix}.
   - Before: `<div class="self-end" />`
   - After: `<div class="as-end" />`
 
+<br />
+
 - justify-{suffix} => jc-{suffix}.
   - Before: `<div class="justify-center" />`
   - After: `<div class="jc-center" />`
+
+<br />
 
 - justify-items-{suffix} => ji-{suffix}.
   - Before: `<div class="justify-items-start" />`
   - After: `<div class="ji-start" />`
 
+<br />
+
 - justify-self-{suffix} => js-{suffix}.
   - Before: `<div class="justify-self-end" />`
   - After: `<div class="js-end" />`
+
+<br />
 
 - place-content-{suffix} => pc-{suffix}.
   - Before: `<div class="place-content-center" />`
   - After: `<div class="pc-center" />`
 
+<br />
+
 - place-items-{suffix} => pi-{suffix}.
   - Before: `<div class="place-items-start" />`
   - After: `<div class="pi-start" />`
+
+<br />
 
 - place-self-{suffix} => ps-{suffix}.
   - Before: `<div class="place-self-end" />`
   - After: `<div class="ps-end" />`
 
+<br />
+
 - text-{suffix-font-size} => fs-{suffix-font-size}.
   - Before: `<div class="text-lg" />`
   - After: `<div class="fs-lg" />`
+
+<br />
 
 - font-{suffix-font-weight} => fw-{suffix-font-weight}.
   - Before: `<div class="font-bold" />`
   - After: `<div class="fw-bold" />`
 
+<br />
+
 - gap-{suffix} => g-{suffix}.
   - Before: `<div class="gap-0" />`
   - After: `<div class="g-0" />`
+
+<br />
 
 - gap-y-{suffix} => gy-{suffix}.
   - Before: `<div class="gap-y-0" />`
   - After: `<div class="gy-0" />`
 
+<br />
+
 - gap-x-{suffix} => gx-{suffix}.
   - Before: `<div class="gap-x-0" />`
   - After: `<div class="gx-0" />`
+
+<br />
 
 - overflow-{suffix} => ov-{suffix}.
   - Before: `<div class="overflow-hidden" />`
   - After: `<div class="ov-hidden" />`
 
+<br />
+
 - overflow-x-{suffix} => ovx-{suffix}.
   - Before: `<div class="overflow-x-clip" />`
   - After: `<div class="ovx-clip" />`
+
+<br />
 
 - overflow-y-{suffix} => ovy-{suffix}.
   - Before: `<div class="overflow-y-scroll" />`
   - After: `<div class="ovy-scroll" />`
 
+<br />
+
 - rounded-{suffix} => br-{suffix}.
   - Valid for all values and variants of `rounded`.
+  
   - Before: `<div class="rounded-bl-xl" />`
   - After: `<div class="br-bl-xl" />`
 
+<br />
+
 - columns-{suffix} => cols-{suffix}.
   - Valid for all values and variants of `columns`.
+  
   - Before: `<div class="columns-xl" />`
   - After: `<div class="cols-xl" />`
 
+<br />
+
 - border-{suffix} => bw-{suffix}.
   - Valid for all values and variants of `border-width`.
+  
   - Before: `<div class="border-y-0" />`
   - After: `<div class="bw-y-0" />`
 
+<br />
+
 - border-{suffix} => bc-{suffix}.
   - Valid for all values and variants of `border-color`.
+  
   - Before: `<div class="border-white" />`
   - After: `<div class="bc-white" />`
 
+<br />
+
 - outline-{suffix} => otl-{suffix}.
   - Valid for all values and variants of `outline-width`.
+  
   - Before: `<div class="outline-1" />`
   - After: `<div class="otl-1" />`
 
+<br />
+
 - outline-{suffix} => otl-{suffix}.
   - Valid for all values and variants of `outline-color`.
+  
   - Before: `<div class="outline-white" />`
   - After: `<div class="otl-white" />`
 
+<br />
+
 - outline-offset-{suffix} => otl-o-{suffix}.
   - Valid for all values and variants of `outline-offset`.
+  
   - Before: `<div class="outline-offset-1" />`
   - After: `<div class="otl-o-1" />`
+
+<br />
 
 - leading-{suffix} => lh-{suffix}.
   - Before: `<div class="leading-3" />`
   - After: `<div class="lh-3" />`
 
+<br />
+
 - object-{suffix} => obj-{suffix}.
   - Valid for all values and variants of `object`.
+  
   - Before: `<div class="object-fit" />`
   - After: `<div class="obj-fit" />`
 
   - Before: `<div class="object-left-bottom" />`
   - After: `<div class="obj-lb" />`
 
+<br />
+
 - bg-{position} => bg-{abbreviation}.
   - Before: `<div class="bg-right-top" />`
   - After: `<div class="bg-rt" />`
 
+<br />
+
 - flex-{wrap-reverse, wrap, nowrap} => f-{wrap-reverse, wrap, nowrap}.
   - Before: `<div class="flex-wrap" />`
   - After: `<div class="f-wrap" />`
+
+<br />
 
 - flex-{1, auto, initial, none} => f-{1, auto, initial, none}.
   - Before: `<div class="flex-1" />`
@@ -230,36 +308,49 @@ Simplified classes:
 
 ---
 
-Classes with new features:
+## Classes with new Features
 
 - fs-{fontSize}-{fontWeight}:
   - Before: `<div class="text-lg font-bold" />`
   - After: `<div class="fs-lg-bold" />`
 
+<br />
+
 - fs-{fontSize}-{color}:
   - Before: `<div class="text-lg text-blue-500" />`
   - After: `<div class="fs-lg-blue-500" />`
 
+<br />
 
 - fs-{fontSize}-{fontWeight}-{color}:
   - Before: `<div class="text-lg font-bold text-blue-500" />`
   - After: `<div class="fs-lg-bold-blue-500" />`
 
+<br />
+
 - bw-{borderWidth}-{borderColor}:
   - Before: `<div class="border-4 border-blue-500" />`
   - After: `<div class="bw-4-blue-500" />`
+
+<br />
 
 - bw-{borderWidth}-{borderStyle}-{borderColor}:
   - Before: `<div class="border-4 border-dashed border-blue-500" />`
   - After: `<div class="bw-4-dashed-blue-500" />`
 
+<br />
+
 - otl-{outlineWidth}-{outlineColor}.
   - Before: `<div class="outline-2 outline outline-amber-600" />`
   - After: `<div class="otl-2-amber-600" />`
 
+<br />
+
 - otl-{outlineWidth}-{outlineStyle}-{outlineColor}.
   - Before: `<div class="outline-2 outline-dashed outline-amber-600" />`
   - After: `<div class="otl-2-dashed-amber-600" />`
+
+<br />
 
 - {r, l, t, b, x, y}-{suffix}:
   - Before: `<div class="right-1" />`
@@ -280,33 +371,49 @@ Classes with new features:
   - Before: `<div class="inset-y-1" />`
   - After: `<div class="y-1" />`
 
+<br />
+
 - center:
   - Before: `<div class="items-center justify-center" />`
   - After: `<div class="center" />`
+
+<br />
 
 - col:
   - Before: `<div class="flex flex-col" />`
   - After: `<div class="col" />`
 
+<br />
+
 - col-reverse:
   - Before: `<div class="flex flex-col-reverse" />`
   - After: `<div class="col-reverse" />`
+
+<br />
 
 - col-full:
   - Before: `<div class="flex flex-col w-full" />`
   - After: `<div class="col-full" />`
 
+<br />
+
 - row:
   - Before: `<div class="flex flex-row" />`
   - After: `<div class="row" />`
+
+<br />
 
 - row-reverse:
   - Before: `<div class="flex flex-row-reverse" />`
   - After: `<div class="row-reverse" />`
 
+<br />
+
 - row-full:
   - Before: `<div class="flex flex-row w-full" />`
   - After: `<div class="row-full" />`
+
+<br />
 
 - container-col:
   - `<div class="container-col" />`
@@ -336,6 +443,8 @@ Classes with new features:
     }
     ```
 
+<br />
+
 - container-row:
   - `<div class="container-row" />`
   - ```
@@ -364,65 +473,94 @@ Classes with new features:
     }
     ```
 
+<br />
+
 - after-base:
   - Before: `<div class="after:block after:content-['']" />`
   - After: `<div class="after-base" />`
-  
+
+<br />
+
 - before-base:
   - Before: `<div class="before:block before:content-['']" />`
   - After: `<div class="before-base" />`
-  
+
+<br />
+
 - max-size-{suffix}:
   - Before: `<div class="max-w-6 max-h-6" />`
   - After: `<div class="max-size-6" />`
-  
+
+<br />
+
 - min-size-{suffix}:
   - Before: `<div class="min-w-6 min-h-6" />`
   - After: `<div class="min-size-6" />`
-  
+
+<br />
+
 - square-{suffix}:
   - Before: `<div class="min-w-6 min-h-6 w-6 h-6" />`
   - After: `<div class="square-6" />`
+
+<br />
 
 - ellipsis:
   - Adds ellipsis to text that exceeds the container, taking up all available space, in addition to working in cases where `truncate` does not work.
   - `<div class="ellipsis" />`
 
+<br />
+
 - scrollbar-hide:
   - `<div class="scrollbar-hide" />`
   - Hides scroll bar.
+
+<br />
 
 - scrollbar-default:
   - `<div class="scrollbar-default" />`
   - Show scroll bar.
 
+<br />
+
 - hr-x:
   - Before: `<hr class="border-0 rounded-[100px] bg-gray-200 h-px w-full" />`
   - After: `<hr class="hr-x" />`
+  
   - Before: `<hr class="border-0 rounded-[100px] bg-blue-500 h-px w-full" />`
   - After: `<hr class="hr-x-blue-500" />`
+
+<br />
 
 - hr-y:
   - Before: `<hr class="border-0 rounded-[100px] bg-gray-200 w-px h-full" />`
   - After: `<hr class="hr-y" />`
+  
   - Before: `<hr class="border-0 rounded-[100px] bg-blue-500 w-px h-full" />`
   - After: `<hr class="hr-y-blue-500" />`
+
+<br />
 
 - animate-skeleton:
   - Before: `<div class="animate-pulse bg-slate-200" />`
   - After: `<div class="animate-skeleton" />`.
 
-<br />
-
 ---
 
+<br />
+
+# Contribute
+
+Contributions are always welcome! See how you can contribute to our [Contribution Page](https://github.com/EleganceUI/eleganceui-tailwindcss-utilities/graphs/contributors).
+
 # Contributors
+
 <a href="https://github.com/EleganceUI/eleganceui-tailwindcss-utilities/graphs/contributors"><img src="https://contrib.rocks/image?repo=EleganceUI/eleganceui-tailwindcss-utilities" /></a>
 
 # Author
 
-By Éverton Toffanetto.
+By Éverton Toffanetto. Follow me on social media:
 
-:link: LinkedIn: https://www.linkedin.com/in/everton-toffanetto
+:link: [LinkedIn](https://www.linkedin.com/in/everton-toffanetto)
 
-:link: YouTube: https://www.youtube.com/@toffanettodev
+:link: [YouTube](https://www.youtube.com/@toffanettodev)
