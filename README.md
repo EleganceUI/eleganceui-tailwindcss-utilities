@@ -297,6 +297,12 @@ There are two types of utility classes, those that simplify the syntax of classe
 
 <br />
 
+- tracking-{suffix} => ls-{suffix}.
+  - Before: `<div class="tracking-widest" />`
+  - After: `<div class="ls-widest" />`
+
+<br />
+
 - object-{suffix} => obj-{suffix}.
   - Valid for all values and variants of `object`.
   
