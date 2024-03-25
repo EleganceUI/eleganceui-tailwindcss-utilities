@@ -2,12 +2,28 @@
 
 Expand the possibilities of TailwindCSS with `eleganceui-tailwind-utilities`, a library of utility classes designed to simplify and expand your styling options. With our solution, you save time by writing less code and maintaining visual consistency across your projects.
 
-## Features
+<br />
+
+---
+
+# Features
 
 - **Class Simplification**: Transform long TailwindCSS class chains into shorter, more readable versions.
+
+<br />
+
 - **Additional Features**: Unlock new possibilities with exclusive utility classes, further optimizing your workflow.
+
+<br />
+
 - **Easy Integration**: Compatible with existing TailwindCSS configuration, allowing for a smooth and seamless transition.
+
+<br />
+
 - **Customization and Flexibility**: Choose to import the full set of utilities or just what you need for your project.
+
+<br />
+
 - **Adapts with Custom Theme**: Recognizes the theme's custom tokens, continue using the abbreviated prefixes + custom values from your tailwind.config file.
 
 <br />
@@ -29,6 +45,8 @@ or
 ```shell
 npm i -D eleganceui-tailwind-utilities
 ```
+
+<br />
 
 ## Configuration
 
@@ -110,6 +128,8 @@ Transform your code with EleganceUI Tailwind Utilities utility classes. Here's a
 ```
 
 There are two types of utility classes, those that simplify the syntax of classes that already exist in TailwindCSS and those that add new functionality:
+
+<br />
 
 ## Simplified Classes
 
@@ -545,17 +565,25 @@ There are two types of utility classes, those that simplify the syntax of classe
   - Before: `<div class="animate-pulse bg-slate-200" />`
   - After: `<div class="animate-skeleton" />`.
 
----
-
 <br />
+
+---
 
 # Contribute
 
 Contributions are always welcome! See how you can contribute to our [Contribution Page](https://github.com/EleganceUI/eleganceui-tailwindcss-utilities/graphs/contributors).
 
+<br />
+
+---
+
 # Contributors
 
 <a href="https://github.com/EleganceUI/eleganceui-tailwindcss-utilities/graphs/contributors"><img src="https://contrib.rocks/image?repo=EleganceUI/eleganceui-tailwindcss-utilities" /></a>
+
+<br />
+
+---
 
 # Author
 
