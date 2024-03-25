@@ -567,6 +567,12 @@ There are two types of utility classes, those that simplify the syntax of classe
 
 <br />
 
+- backface-{suffix}:
+  - `<div class="backface-visible" />`.
+  - `<div class="backface-hidden" />`.
+
+<br />
+
 - animate-skeleton:
   - Before: `<div class="animate-pulse bg-slate-200" />`
   - After: `<div class="animate-skeleton" />`.
