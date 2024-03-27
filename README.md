@@ -366,6 +366,12 @@ There are two types of utility classes, those that simplify the syntax of classe
 
 <br />
 
+- bw-{side}-{borderWidth}-{borderStyle}-{borderColor}:
+  - Before: `<div class="border-x-4 border-dashed border-blue-500" />`
+  - After: `<div class="bw-x-4-dashed-red-500" />`
+
+<br />
+
 - otl-{outlineWidth}-{outlineColor}.
   - Before: `<div class="outline-2 outline outline-amber-600" />`
   - After: `<div class="otl-2-amber-600" />`

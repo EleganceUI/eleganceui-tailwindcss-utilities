@@ -12,40 +12,84 @@ export const border = plugin(({ addUtilities, theme }) => {
     'hidden',
     'none'
   ]
+  const sides = ['t', 'b', 'l', 'r', 's', 'e', 'x', 'y']
+  const sideMap: Record<string, any> = {
+    t: 'Top',
+    b: 'Bottom',
+    l: 'Left',
+    r: 'Right',
+    x: ['Left', 'Right'],
+    y: ['Top', 'Bottom']
+  }
   borderWidthEntries.forEach(([borderWidthName, borderWidthValue]) => {
     borderStyleEntries.forEach(borderStyle => {
       colorEntries.forEach(([colorName, colorValues]) => {
         if (typeof colorValues === 'object') {
           Object.entries(colorValues).forEach(([shade, colorValue]) => {
-            const classNameWithShadeAndWeight = `.bw-${borderWidthName}-${borderStyle}-${colorName}-${shade}`
-            utilities[classNameWithShadeAndWeight] = {
-              borderWidth: borderWidthValue,
-              borderStyle,
-              borderColor: colorValue
-            }
+            sides.forEach(side => {
+              if (side === 'x' || side === 'y') {
+                sideMap[side].forEach((direction: any) => {
+                  const className = `.bw-${side}-${borderWidthName}-${borderStyle}-${colorName}-${shade}`
+                  if (!utilities[className]) {
+                    utilities[className] = {
+                      [`border${direction}Width`]: borderWidthValue,
+                      borderStyle,
+                      borderColor: colorValue
+                    }
+                  } else {
+                    utilities[className][`border${direction}Width`] = borderWidthValue
+                  }
+                })
+              } else {
+                const classNameWithSideAndStyleAndShade = `.bw-${side}-${borderWidthName}-${borderStyle}-${colorName}-${shade}`
+                utilities[classNameWithSideAndStyleAndShade] = {
+                  [`border${sideMap[side]}Width`]: borderWidthValue,
+                  borderStyle,
+                  borderColor: colorValue
+                }
 
-            const classNameWithShade = `.bw-${borderWidthName}-${colorName}-${shade}`
-            utilities[classNameWithShade] = {
-              borderWidth: borderWidthValue,
-              borderColor: colorValue
-            }
+                const classNameWithSideAndShade = `.bw-${side}-${borderWidthName}-${colorName}-${shade}`
+                utilities[classNameWithSideAndShade] = {
+                  [`border${sideMap[side]}Width`]: borderWidthValue,
+                  borderColor: colorValue
+                }
+              }
+            })
           })
         } else {
-          const classNameWithBorderStyle = `.bw-${borderWidthName}-${borderStyle}-${colorName}`
-          utilities[classNameWithBorderStyle] = {
-            borderWidth: borderWidthValue,
-            borderStyle,
-            borderColor: colorValues
-          }
+          sides.forEach(side => {
+            if (side === 'x' || side === 'y') {
+              sideMap[side].forEach((direction: any) => {
+                const className = `.bw-${side}-${borderWidthName}-${borderStyle}-${colorName}`
+                if (!utilities[className]) {
+                  utilities[className] = {
+                    [`border${direction}Width`]: borderWidthValue,
+                    borderStyle,
+                    borderColor: colorValues
+                  }
+                } else {
+                  utilities[className][`border${direction}Width`] = borderWidthValue
+                }
+              })
+            } else {
+              const classNameWithSideAndStyle = `.bw-${side}-${borderWidthName}-${borderStyle}-${colorName}`
+              utilities[classNameWithSideAndStyle] = {
+                [`border${sideMap[side]}Width`]: borderWidthValue,
+                borderStyle,
+                borderColor: colorValues
+              }
 
-          const classNameWithoutBorderStyle = `.bw-${borderWidthName}-${colorName}`
-          utilities[classNameWithoutBorderStyle] = {
-            borderWidth: borderWidthValue,
-            borderColor: colorValues
-          }
+              const classNameWithSide = `.bw-${side}-${borderWidthName}-${colorName}`
+              utilities[classNameWithSide] = {
+                [`border${sideMap[side]}Width`]: borderWidthValue,
+                borderColor: colorValues
+              }
+            }
+          })
         }
       })
     })
   })
+
   addUtilities(utilities)
 })
