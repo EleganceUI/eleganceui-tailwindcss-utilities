@@ -6,11 +6,9 @@
     [
       "@semantic-release/npm",
       {
-        "npmPublish": true
+        "npmPublish": true,
+        "tarballDir": "dist"
       }
-    ],
-    ["@semantic-release/github", {
-      "assets": ["dist/**/*.{js,ts}"]
-    }]
+    ]
   ]
 }
