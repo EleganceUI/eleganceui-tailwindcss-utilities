@@ -19,7 +19,7 @@ export const size = plugin(({ matchUtilities, theme }) => {
       })
     },
     {
-      values: theme('spacing'),
+      values: theme('size'),
       type: 'any'
     }
   )
