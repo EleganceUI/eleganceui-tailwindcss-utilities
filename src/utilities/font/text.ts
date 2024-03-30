@@ -23,6 +23,10 @@ export const text = plugin(({ addUtilities, theme }) => {
               fontSize: fontSizeValue,
               color: colorValue
             }
+
+            utilities[`.tx-${colorName}-${shade}`] = {
+              color: colorValue
+            }
           })
         } else {
           const classNameWithWeight = `.fs-${fontSizeName}-${fontWeightName}-${colorName}`
@@ -35,6 +39,10 @@ export const text = plugin(({ addUtilities, theme }) => {
           const classNameWithoutWeight = `.fs-${fontSizeName}-${colorName}`
           utilities[classNameWithoutWeight] = {
             fontSize: fontSizeValue,
+            color: colorValues
+          }
+
+          utilities[`.tx-${colorName}`] = {
             color: colorValues
           }
         }
