@@ -332,6 +332,30 @@ There are two types of utility classes, those that simplify the syntax of classe
 
 <br>
 
+- text-{color} => tx-{color}.
+  - Before: `<div class="text-blue-500" />`
+  - After: `<div class="tx-blue-500" />`
+
+<br>
+
+- text-{align} => tx-{align}.
+  - Before: `<div class="text-center" />`
+  - After: `<div class="tx-center" />`
+
+<br>
+
+- text-{overflow} => tx-{overflow}.
+  - Before: `<div class="text-clip" />`
+  - After: `<div class="tx-clip" />`
+
+<br>
+
+- text-{wrap} => tx-{wrap}.
+  - Before: `<div class="text-balance" />`
+  - After: `<div class="tx-balance" />`
+
+<br>
+
 ---
 
 ## Classes with new Features
