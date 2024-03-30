@@ -1,3 +1,6 @@
 export { fontSize } from './fontSize'
 export { fontWeight } from './fontWeight'
+export { textAlign } from './textAlign'
+export { textOverflow } from './textOverflow'
+export { textWrap } from './textWrap'
 export { text } from './text'
