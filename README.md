@@ -55,14 +55,14 @@ It is possible to import the complete set with all utility classes at once:
 ```typescript
 import type { Config } from 'tailwindcss'
 
-import * as customUtilities from '@eleganceui/tailwind-utilities'
+import eleganceUIUtilities from '@eleganceui/tailwind-utilities'
 
 const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx}', './index.html'],
   theme: {
     extend: {}
   },
-  plugins: [...Object.values(customUtilities)]
+  plugins: [...eleganceUIUtilities]
 }
 
 export default config

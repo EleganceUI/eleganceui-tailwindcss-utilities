@@ -1,12 +1,6 @@
-export * from './utilities/align'
-export * from './utilities/border'
-export * from './utilities/col'
-export * from './utilities/container'
-export * from './utilities/flex'
-export * from './utilities/font'
-export * from './utilities/justify'
-export * from './utilities/object'
-export * from './utilities/others'
-export * from './utilities/outline'
-export * from './utilities/place'
-export * from './utilities/row'
+import * as eleganceUI from './utilities'
+export * from './utilities'
+
+const eleganceUIUtilities = Object.values(eleganceUI)
+
+export default eleganceUIUtilities

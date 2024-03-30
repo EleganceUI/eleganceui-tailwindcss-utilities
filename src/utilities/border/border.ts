@@ -37,7 +37,8 @@ export const border = plugin(({ addUtilities, theme }) => {
                       borderColor: colorValue
                     }
                   } else {
-                    utilities[className][`border${direction}Width`] = borderWidthValue
+                    utilities[className][`border${direction}Width`] =
+                      borderWidthValue
                   }
                 })
               } else {
@@ -68,7 +69,8 @@ export const border = plugin(({ addUtilities, theme }) => {
                     borderColor: colorValues
                   }
                 } else {
-                  utilities[className][`border${direction}Width`] = borderWidthValue
+                  utilities[className][`border${direction}Width`] =
+                    borderWidthValue
                 }
               })
             } else {
