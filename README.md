@@ -113,14 +113,14 @@ Transform your code with EleganceUI Tailwind Utilities utility classes. Here's a
 - </div>
 + {/* after */}
 + <div className="px-4 container-row g-4">
-+   <div className="ov-hidden br-xl shadow col g-4 square-72 bw-2-blue-500">
++   <div className="ov-hidden br-xl shadow col g-4 square-72 bw-2 bc-blue-500">
 +     <div className="h-32 col-full animate-skeleton" />
 +     <div className="br-lg p-4 g-4">
-+       <h3 className="ellipsis fs-lg-bold-blue-500">
++       <h3 className="ellipsis fs-lg fw-bold text-blue-500">
 +         Example long title omitted with ellipsis
 +       </h3>
 +       <hr className="hr-x" />
-+       <p className="fs-sm-normal-gray-800">Brief description.</p>
++       <p className="fs-sm fw-normal text-gray-800">Brief description.</p>
 +     </div>
 +   </div>
 +   {/* ... */}
@@ -359,54 +359,6 @@ There are two types of utility classes, those that simplify the syntax of classe
 ---
 
 ## Classes with new Features
-
-- fs-{fontSize}-{fontWeight}:
-  - Before: `<div class="text-lg font-bold" />`
-  - After: `<div class="fs-lg-bold" />`
-
-<br />
-
-- fs-{fontSize}-{color}:
-  - Before: `<div class="text-lg text-blue-500" />`
-  - After: `<div class="fs-lg-blue-500" />`
-
-<br />
-
-- fs-{fontSize}-{fontWeight}-{color}:
-  - Before: `<div class="text-lg font-bold text-blue-500" />`
-  - After: `<div class="fs-lg-bold-blue-500" />`
-
-<br />
-
-- bw-{borderWidth}-{borderColor}:
-  - Before: `<div class="border-4 border-blue-500" />`
-  - After: `<div class="bw-4-blue-500" />`
-
-<br />
-
-- bw-{borderWidth}-{borderStyle}-{borderColor}:
-  - Before: `<div class="border-4 border-dashed border-blue-500" />`
-  - After: `<div class="bw-4-dashed-blue-500" />`
-
-<br />
-
-- bw-{side}-{borderWidth}-{borderStyle}-{borderColor}:
-  - Before: `<div class="border-x-4 border-dashed border-blue-500" />`
-  - After: `<div class="bw-x-4-dashed-red-500" />`
-
-<br />
-
-- otl-{outlineWidth}-{outlineColor}.
-  - Before: `<div class="outline-2 outline outline-amber-600" />`
-  - After: `<div class="otl-2-amber-600" />`
-
-<br />
-
-- otl-{outlineWidth}-{outlineStyle}-{outlineColor}.
-  - Before: `<div class="outline-2 outline-dashed outline-amber-600" />`
-  - After: `<div class="otl-2-dashed-amber-600" />`
-
-<br />
 
 - {r, l, t, b, x, y}-{suffix}:
   - Before: `<div class="right-1" />`
