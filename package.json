@@ -1,6 +1,6 @@
 {
   "name": "eleganceui-tailwind-utilities",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "main": "dist/index.cjs.js",
   "umd:main": "dist/index.umd.js",
   "module": "dist/index.es.js",
